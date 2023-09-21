@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-950;
+    @apply text-neutral-100;
+  }
+}
+
+@layer components {
+  .logo {
+    @apply outline flex px-4 py-2;
+    @apply duration-150 ease-in-out hover:scale-110;
+  }
+
+  .navLink {
+    @apply flex justify-center items-center outline px-4 py-2;
+    @apply text-lg;
+    @apply duration-150 ease-in-out hover:-translate-y-1;
+  }
+}
+
+@layer utilities {
+}
