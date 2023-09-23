@@ -1,12 +1,5 @@
 import Image from "next/image";
-
-type User =
-  | {
-      name?: string | null | undefined;
-      email?: string | null | undefined;
-      image?: string | null | undefined;
-    }
-  | undefined;
+import type { User } from "next-auth";
 
 type Props = {
   user: User;
@@ -31,6 +24,7 @@ const UserCard = ({ user, pagetype }: Props) => {
       {greeting}
       {userImage}
       <p>{pagetype} Page!</p>
+      <p>Role: {user.role}</p>
     </div>
   );
 };

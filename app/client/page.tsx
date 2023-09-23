@@ -12,9 +12,11 @@ const ClientPage = () => {
     },
   });
 
+  if (!session?.user) return;
+
   return (
     <div>
-      <UserCard user={session?.user} pagetype={"Client"} />
+      <UserCard user={session.user} pagetype={"Client"} />
     </div>
   );
 };
