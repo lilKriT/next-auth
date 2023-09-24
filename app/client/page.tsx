@@ -12,6 +12,12 @@ const ClientPage = () => {
     },
   });
 
+  // You can also do it this way - but it's better to just use middleware.
+  // if (session?.user.role !== "admin" && session?.user.role !== "manager") {
+  //   return <h1 className="text-5xl">Access Denied</h1>;
+  // }
+
+  // This wont be needed with middleware.
   if (!session?.user) return;
 
   return (
