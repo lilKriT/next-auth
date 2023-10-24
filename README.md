@@ -4,7 +4,7 @@ This is my attempt at learning NextAuth. Created by lilKriT.
 
 ## Steps:
 
-- pnpm add next-auth
+- install packages `pnpm add next-auth`
 - create `api/auth/[...nextauth]/route.ts`
 - you don't have to create pages for signin, signout etc
 - create options.ts if you want providers to be in a separate file
